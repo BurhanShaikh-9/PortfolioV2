@@ -95,14 +95,7 @@ export const Project = () => {
                     <p>UI/UX and designing</p>
                   </div>
                 </div>
-                <div className="worksInner">
-                  <img src={walaa} alt="" />
-                  <div className="blackwindow">
-                    <h2>Walaa</h2>
-                    <p>An omani coupon application</p>
-                    <p>UI/UX and designing</p>
-                  </div>
-                </div>
+              
               </Carousel>
             </div>
 

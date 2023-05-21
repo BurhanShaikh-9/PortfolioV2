@@ -15,7 +15,9 @@ export const About = () => {
           <div className="rightSection">
             <div className="rightInner">
               <h1>About</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio sint voluptatem obcaecati quis quo voluptates amet incidunt facilis alias, voluptatibus architecto. Velit consequatur ratione porro minus quos rem reiciendis?</p>
+              <p>
+              I am a Software Engineer, who keeps looking for the opportunity to get better, to learn and to improve my skills.
+              </p>
             </div>
           </div>
         </div>
