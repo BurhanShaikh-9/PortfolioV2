@@ -1,0 +1,442 @@
+@font-face {
+  font-family: "LobsterItalic";
+  src: url("./assets/Fonts/LobsterTwo-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BoldLobsterItalic";
+  src: url("./assets/Fonts/LobsterTwo-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MartelBlack";
+  src: url("./assets/Fonts/Martel-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeutonRegular";
+  src: url("./assets/Fonts/Neuton-Regular.ttf") format("truetype");
+}
+.noise {
+  position: fixed;
+  z-index: 9999;
+  top: -300%;
+  left: -150%;
+  height: 600%;
+  width: 600%;
+  animation: grain 7s steps(10) infinite;
+  background-image: url(assets/noise.png);
+  background-size: 200px;
+  background-repeat: repeat;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translateY(15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+.container {
+  max-width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "MartelBlack";
+}
+
+.Header {
+  font-family: "LobsterItalic";
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Header .headerInner {
+  position: fixed;
+  height: 70px;
+  top: 0;
+  width: 83%;
+  display: flex;
+  z-index: 999999999999;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.Header .headerInner .menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.Header .headerInner .menuOuter {
+  display: none;
+}
+.Header .nav2 {
+  display: none;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.app {
+  font-family: "NeutonRegular";
+  height: 100dvh;
+  background-color: rgb(224, 224, 224);
+  width: 100dvw;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.app .welcome .welcomeInner {
+  margin-top: 60px;
+}
+.app .welcome .welcomeInner .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  width: 600px;
+  opacity: 0.9;
+}
+.app .welcome .welcomeInner .inner img {
+  position: absolute;
+}
+.app .welcome .welcomeInner .inner .ba {
+  right: 75px;
+  width: 300px;
+}
+.app .welcome .welcomeInner .inner .ha {
+  width: 220px;
+  top: 30px;
+}
+.app .welcome .welcomeInner .inner .no {
+  left: 45px;
+  top: 80px;
+  width: 170px;
+}
+.app .about .aboutInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 45px;
+  width: 100%;
+}
+.app .about .aboutInner .leftSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.app .about .aboutInner .leftSection img {
+  border: 1px solid black;
+  padding: 5px;
+  width: 70%;
+}
+.app .about .aboutInner .rightSection {
+  width: 50%;
+  min-width: 396px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app .skill .skillInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  flex-direction: row;
+  width: 100%;
+}
+.app .skill .skillInner .upperSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.app .skill .skillInner .bottomSection {
+  min-width: 480px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+  flex-direction: column;
+}
+.app .skill .skillInner .bottomSection .bottomInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer img {
+  width: 50px;
+}
+.app .project {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  width: 100dvw;
+}
+.app .project .projectInner .heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.app .project .projectInner .works {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .project .projectInner .works .wrapper {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 80%;
+  border-radius: 10px;
+}
+.app .project .projectInner .works .worksInner {
+  cursor: pointer;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.app .project .projectInner .works .worksInner:hover .blackwindow {
+  display: block;
+}
+.app .project .projectInner .works .worksInner .blackwindow {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  padding: 20px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-color: rgba(22, 22, 22, 0.829);
+}
+.app .project .projectInner .works .worksInner .blackwindow h2 {
+  color: white;
+}
+.app .project .projectInner .works .worksInner .blackwindow p {
+  color: white;
+}
+.app .project .projectInner .works .worksInner img {
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.app .section {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  width: 100dvw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+  .skill .skillInner .upperSection {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .welcome .welcomeInner .inner {
+    width: 550px !important;
+  }
+  .welcome .welcomeInner .inner img {
+    position: absolute;
+  }
+  .welcome .welcomeInner .inner .ba {
+    right: 75px;
+    width: 270px !important;
+  }
+  .welcome .welcomeInner .inner .ha {
+    width: 190px !important;
+    top: 63px !important;
+  }
+  .welcome .welcomeInner .inner .no {
+    left: 66px !important;
+    top: 110px !important;
+    width: 140px !important;
+  }
+  .about .aboutInner .leftSection img {
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .Header {
+    position: relative;
+  }
+  .Header .headerInner .menu {
+    display: none;
+  }
+  .Header .headerInner .menuOuter {
+    display: block;
+    position: relative;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+  }
+  .Header .headerInner .menuOuter .menuUp {
+    height: 2px;
+    width: 25px;
+    margin-bottom: 5px;
+    background-color: black;
+  }
+  .Header .headerInner .menuOuter .menuMid {
+    height: 2px;
+    width: 25px;
+    background-color: black;
+  }
+  .Header .headerInner .menuOuter .menuDown {
+    height: 2px;
+    width: 25px;
+    background-color: black;
+    margin-top: 5px;
+  }
+  .Header .nav2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+  }
+  .Header .nav2 p {
+    font-size: 30px;
+  }
+  .Header .nav2 p a {
+    color: white !important;
+  }
+  .about .aboutInner .leftSection img {
+    width: 95% !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .welcome .welcomeInner .inner {
+    width: 310px !important;
+  }
+  .welcome .welcomeInner .inner img {
+    position: absolute;
+  }
+  .welcome .welcomeInner .inner .ba {
+    right: 20px !important;
+    width: 180px !important;
+  }
+  .welcome .welcomeInner .inner .ha {
+    width: 120px !important;
+    top: 137px !important;
+  }
+  .welcome .welcomeInner .inner .no {
+    left: 13px !important;
+    top: 165px !important;
+    width: 97px !important;
+  }
+  .about .aboutInner {
+    text-align: center;
+  }
+  .about .aboutInner .leftSection img {
+    width: 120% !important;
+  }
+  .about .aboutInner .rightSection {
+    min-width: 290px !important;
+  }
+}/*# sourceMappingURL=App.css.map */
