@@ -20,22 +20,33 @@ export const Header = ({ aboutRef, contactRef }) => {
                         <p> <a href="#ProjectMain">Project</a> </p>
                         <p><a href="#contactMain" >Contact</a></p>
                     </div>
-                    <button className="menuOuter" onClick={() => { setIsNav(!isNav) }}>
-                        <div className="menuUp" />
-                        <div className="menuMid" />
-                        <div className="menuDown" />
-                    </button>
+                    {/* {
+                        !isNav && */}
+                        <button className="menuOuter" onClick={() => { setIsNav(!isNav) }}>
+                            <div className="menuUp" />
+                            <div className="menuMid" />
+                            <div className="menuDown" />
+                        </button>
+                    {/* } */}
                 </nav>
                 {
-                    isNav && 
+                    isNav &&
                     <nav className="nav2">
-                    <p> <a href="#AboutMain">About</a> </p>
-                    <p> <a href="#SkillMain" >Skills</a> </p>
-                    <p><a href="#ProjectMain">Projects</a></p>
-                    <p><a href="#contactMain" >Contact</a></p>
-                </nav>
+                        <div className="nav2Inner">
+{/*                         
+                                <button className="menuOuter1" onClick={() => { setIsNav(!isNav), console.log("function Running") }}>
+                                    <div className="menuUp" />
+                                    <div className="menuDown" />
+                                </button> */}
+                           
+                            <p> <a href="#AboutMain">About</a> </p>
+                            <p> <a href="#SkillMain" >Skills</a> </p>
+                            <p><a href="#ProjectMain">Projects</a></p>
+                            <p><a href="#contactMain" >Contact</a></p>
+                        </div>
+                    </nav>
                 }
-                
+
 
                 {/* </div> */}
             </header>
