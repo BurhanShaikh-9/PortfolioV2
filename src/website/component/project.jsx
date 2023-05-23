@@ -48,7 +48,7 @@ export const Project = () => {
             <div className="wrapper">
               <Slider className='reactSlickCarousel' {...settings}>
                 <div className='item'>
-                  <a className="worksInner" draggable="false" href='https://find-my-doctor-v2.vercel.app/'>
+                  <a className="worksInner" draggable="false" target="_blank" href='https://find-my-doctor-v2.vercel.app/'>
                     <img src={fmd} alt="" />
                     <div className="blackwindow">
                       <h2>Find My Doctor</h2>
@@ -59,7 +59,7 @@ export const Project = () => {
                 </div>
                 
                 <div className='item'>
-                  <a className="worksInner" draggable="false" href='https://indushospital.org.uk/dev/'>
+                  <a className="worksInner" draggable="false" target="_blank" href='https://indushospital.org.uk/dev/'>
                     <img src={indusLogo} alt="" />
                     <div className="blackwindow">
                       <h2>Indus Hospital</h2>
@@ -70,7 +70,7 @@ export const Project = () => {
                 </div>
                 
                 <div className='item'>
-                  <a className="worksInner" draggable="false" href='https://arrayshare.netlify.app/'>
+                  <a className="worksInner" draggable="false" target="_blank" href='https://arrayshare.netlify.app/'>
                     <img src={arrayShare} alt="" />
                     <div className="blackwindow">
                       <h2>Array Share</h2>
@@ -81,7 +81,7 @@ export const Project = () => {
                 </div>
                 
                 <div className='item'>
-                  <a className="worksInner" draggable="false" href='https://www.resourcepad.ca/'>
+                  <a className="worksInner" draggable="false" target="_blank" href='https://www.resourcepad.ca/'>
                     <img src={resourcePad} alt="" />
                     <div className="blackwindow">
                       <h2>ResourcePad</h2>
@@ -92,7 +92,7 @@ export const Project = () => {
                 </div>
                 
                 <div className='item'>
-                  <a className="worksInner" draggable="false" href='https://vercel.com/nyx-95/walaa-partner'>
+                  <a className="worksInner" draggable="false" target="_blank" href='https://vercel.com/nyx-95/walaa-partner'>
                     <img src={walaa} alt="" />
                     <div className="blackwindow">
                       <h2>Walaa</h2>
