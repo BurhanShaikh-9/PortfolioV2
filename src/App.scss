@@ -184,11 +184,22 @@ h5 {
         justify-content: center;
         align-items: center;
         width: 50%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
         img {
           border: 1px solid black;
           padding: 5px;
           width: 70%;
         }
+      }
+      .fade-left-in {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .fade-left-out {
+        opacity: 0;
+        transform: translateX(-100%);
       }
       .rightSection {
         width: 50%;
