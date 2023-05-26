@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import {RxCross1} from "react-icons/rx"
 
 export const Header = ({ aboutRef, contactRef }) => {
     const [isNav, setIsNav] = useState(false);
@@ -11,14 +12,14 @@ export const Header = ({ aboutRef, contactRef }) => {
                 {/* <div className="container"> */}
                 <nav className="headerInner">
                     <div className="logo">
-                        <a href="#welcome">Burhan</a>
+                        <a href="#welcome">BURHAN</a>
                     </div>
                     <div className="menu">
                         {/* <p> <a href="#welcome">Home</a> </p> */}
-                        <p> <a href="#AboutMain" >About</a> </p>
-                        <p><a href="#SkillMain">Skills</a></p>
-                        <p> <a href="#ProjectMain">Project</a> </p>
-                        <p><a href="#ContactMain" >Contact</a></p>
+                        <p> <a href="#AboutMain" >ABOUT</a> </p>
+                        <p><a href="#SkillMain">SKILLS</a></p>
+                        <p> <a href="#ProjectMain">PROJECT</a> </p>
+                        <p><a href="#ContactMain" >CONTACT</a></p>
                     </div>
                     {/* {
                         !isNav && */}
@@ -33,16 +34,11 @@ export const Header = ({ aboutRef, contactRef }) => {
                     isNav &&
                     <nav className="nav2">
                         <div className="nav2Inner">
-{/*                         
-                                <button className="menuOuter1" onClick={() => { setIsNav(!isNav), console.log("function Running") }}>
-                                    <div className="menuUp" />
-                                    <div className="menuDown" />
-                                </button> */}
-                           
-                            <p> <a href="#AboutMain">About</a> </p>
-                            <p> <a href="#SkillMain" >Skills</a> </p>
-                            <p><a href="#ProjectMain">Projects</a></p>
-                            <p><a href="#ContactMain" >Contact</a></p>
+                            <button onClick={() => { setIsNav(!isNav) }}><RxCross1/></button>
+                            <p> <a href="#AboutMain" onClick={() => { setIsNav(!isNav) }}>ABOUT</a> </p>
+                            <p> <a href="#SkillMain" onClick={() => { setIsNav(!isNav) }}>SKILLS</a> </p>
+                            <p><a href="#ProjectMain" onClick={() => { setIsNav(!isNav) }}>PROJECTS</a></p>
+                            <p><a href="#ContactMain" onClick={() => { setIsNav(!isNav) }}>CONTACT</a></p>
                         </div>
                     </nav>
                 }

@@ -3,6 +3,22 @@
   src: url("./assets/Fonts/LobsterTwo-Italic.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Bilagike";
+  src: url("./assets/Fonts/Bilagike.otf") format("opentype");
+}
+@font-face {
+  font-family: "Crimson";
+  src: url("./assets/Fonts/CrimsonText-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "CrimsonSemi";
+  src: url("./assets/Fonts/CrimsonText-SemiBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Larissa";
+  src: url("./assets/Fonts/Larissa.ttf") format("truetype");
+}
+@font-face {
   font-family: "BoldLobsterItalic";
   src: url("./assets/Fonts/LobsterTwo-BoldItalic.ttf") format("truetype");
 }
@@ -89,7 +105,7 @@ h5 {
   font-family: "MartelBlack";
 }
 .Header {
-  font-family: "LobsterItalic";
+  font-family: "Crimson";
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -270,7 +286,6 @@ h5 {
       }
     }
   }
-
   .project {
     height: 100dvh;
     display: flex;
@@ -520,7 +535,7 @@ h5 {
       align-items: center;
       flex-direction: column;
       gap: 10px;
-      background-color: rgba(0, 0, 0, 0.541);
+      background-color: rgba(0, 0, 0, 0.966);
       width: 100dvw;
       height: 100dvh;
       position: absolute;
@@ -541,12 +556,17 @@ h5 {
         flex-direction: column;
         width: 100%;
         height: 100%;
-
-        .menuOuter1 {
+        position: relative;
+        button{
           position: absolute;
-          top: 0;
-          // width: 100%;
-          // height: 100%;
+          top: 70px;
+          right: 60px;
+          color: white;
+          cursor: pointer;
+          font-size: 30px;
+          background-color: rgba(255, 255, 255, 0);
+          border: none;
+          z-index: 99999999999999999999999;
         }
       }
     }
