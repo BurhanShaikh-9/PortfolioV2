@@ -16,6 +16,8 @@ export const Project = () => {
     dots: true,
     infinite: true,
     speed: 500,
+    autoplay: true, // Enable auto sliding
+    autoplaySpeed: 1500, // Delay between slides in milliseconds
     slidesToShow: 3, // Show 3 slides on larger screens
     slidesToScroll: 1,
     responsive: [

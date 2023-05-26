@@ -12,7 +12,7 @@ export const Header = ({ aboutRef, contactRef }) => {
                 {/* <div className="container"> */}
                 <nav className="headerInner">
                     <div className="logo">
-                        <a href="#welcome">BURHAN</a>
+                        <a href="#WelcomeMain">BURHAN</a>
                     </div>
                     <div className="menu">
                         {/* <p> <a href="#welcome">Home</a> </p> */}

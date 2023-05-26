@@ -305,6 +305,9 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+.app .project .projectInner .works .wrapper .reactSlickCarousel .slick-arrow {
+  display: none !important;
+}
 .app .project .projectInner .works .worksInner {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
