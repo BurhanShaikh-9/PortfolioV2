@@ -7,6 +7,7 @@ import { Project } from '../component/project'
 import { useOutletContext } from "react-router-dom";
 import { Welcome } from '../component/welcome';
 import { Skill } from '../component/skill';
+import { Contact } from '../component/contact';
 
 export const HomePage = () => {
  
@@ -18,6 +19,7 @@ export const HomePage = () => {
         <div id="AboutMain" className='section about '> <About /> </div>
         <div id="SkillMain" className='section skill '> <Skill /> </div>
         <div id="ProjectMain" className='section project '> <Project /> </div>
+        <div id="ContactMain" className='section contact '> <Contact /> </div>
       </main>
     </React.Fragment>
   )

@@ -331,6 +331,68 @@ h5 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.app .contact {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  width: 100dvw;
+}
+.app .contact .contactInner {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  width: 100dvw;
+  position: relative;
+}
+.app .contact .contactInner .menu {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  transition: all 1s;
+}
+.app .contact .contactInner .linkedIn {
+  bottom: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid grey;
+}
+.app .contact .contactInner .linkedIn:hover {
+  background-color: #0A66C2;
+  color: white;
+}
+.app .contact .contactInner .github {
+  bottom: 200px;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.app .contact .contactInner .github:hover {
+  color: white;
+  background-color: rgb(36, 36, 36);
+}
+.app .contact .contactInner .instagram {
+  border: 1px solid grey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0);
+  bottom: 400px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.app .contact .contactInner .instagram:hover {
+  color: white;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
 .app .section {
   height: 100dvh;
   display: flex;
