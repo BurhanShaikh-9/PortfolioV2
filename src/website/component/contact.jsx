@@ -11,14 +11,14 @@ export const Contact = () => {
         <React.Fragment >
             <div className="container">
                 <div className="contactInner">
-                    <a href="" className=' menu instagram'>
+                    <a href="https://www.instagram.com/nyx9_dev/" target='_blank' className=' menu instagram'>
                         Instagram
                     </a>
-                    <a href="#" className=' menu github'>
-                        GitHub
+                    <a href="https://github.com/BurhanShaikh-9" target='_blank' className=' menu github'>
+                        Git Hub
                     </a>
-                    <a href='#' className=' menu linkedIn'>
-                        Linked IN
+                    <a href='https://www.linkedin.com/in/burhan-shaikh-dev/' className=' menu linkedIn' target='_blank'>
+                        Linked In
                     </a>
                 </div>
             </div>
