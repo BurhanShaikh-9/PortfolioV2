@@ -383,16 +383,16 @@ h5 {
       position: relative;
       .menu{
         position: absolute;
-       
-        width: 100%;
+        width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px;
+        height: 100%;
         transition: all 1s;
       }
       .linkedIn {
         bottom: 0;
+        left: 0;
         backdrop-filter: blur(10px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0);
@@ -403,7 +403,8 @@ h5 {
         }
       }
       .github{
-        bottom: 200px;
+        bottom: 0;
+        left: 200px;
         border: 1px solid grey;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0);
@@ -417,7 +418,8 @@ h5 {
         border: 1px solid grey;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0);
-        bottom: 400px;
+        bottom: 0;
+        left: 400px;
         backdrop-filter: blur(10px);
         &:hover{
           color: white;
