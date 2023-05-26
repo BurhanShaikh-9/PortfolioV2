@@ -8,20 +8,23 @@ import githubIcon from '../../assets/icons/github-mark.png'
 import nextIcon from '../../assets/icons/next js.png'
 import jsIcon from '../../assets/icons/js.png'
 import tailwindIcon from '../../assets/icons/Tailwind_CSS_Logo.svg.png'
+import { useInView } from 'react-intersection-observer';
 export const Skill = () => {
+  const [refLeftSkill, inRefLeftSkill] = useInView();
+  const [refRightSkill, inRefRightSkill] = useInView();
   return (
     <React.Fragment >
 
       <div className="container">
         <div className="skillInner">
-          <div className="upperSection">
+          <div className={`upperSection ${inRefLeftSkill ? 'fade-left-in' : 'fade-left-out'}`} style={{ transitionDelay: '0.3s' }} ref={refLeftSkill}>
             <div className="upperInner">
               <h2>What I do?</h2>
               <p>
               I am proficient in React.js, Next.js, GitHub, and utilizes Tailwind CSS to build visually appealing and responsive websites with a focus on user experience.              </p>
             </div>
           </div>
-          <div className="bottomSection">
+          <div  className={`bottomSection ${inRefRightSkill ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.1s' }} ref={refRightSkill}>
             <div className="bottomInner">
               <div className="skillContainer">
                 <img src={reactIcon} alt="" />
