@@ -18,7 +18,7 @@ export const Header = ({ aboutRef, contactRef }) => {
                         <p> <a href="#AboutMain" >About</a> </p>
                         <p><a href="#SkillMain">Skills</a></p>
                         <p> <a href="#ProjectMain">Project</a> </p>
-                        <p><a href="#contactMain" >Contact</a></p>
+                        <p><a href="#ContactMain" >Contact</a></p>
                     </div>
                     {/* {
                         !isNav && */}
@@ -42,7 +42,7 @@ export const Header = ({ aboutRef, contactRef }) => {
                             <p> <a href="#AboutMain">About</a> </p>
                             <p> <a href="#SkillMain" >Skills</a> </p>
                             <p><a href="#ProjectMain">Projects</a></p>
-                            <p><a href="#contactMain" >Contact</a></p>
+                            <p><a href="#ContactMain" >Contact</a></p>
                         </div>
                     </nav>
                 }
