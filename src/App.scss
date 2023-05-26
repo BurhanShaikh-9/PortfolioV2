@@ -404,7 +404,7 @@ h5 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px;
+        height: 100px;
         transition: all 1s;
       }
       .linkedIn {
@@ -419,7 +419,7 @@ h5 {
         }
       }
       .github{
-        bottom: 200px;
+        bottom: 100px;
         border: 1px solid grey;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0);
@@ -433,11 +433,22 @@ h5 {
         border: 1px solid grey;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0);
-        bottom: 400px;
+        bottom: 200px;
         backdrop-filter: blur(10px);
         &:hover{
           color: white;
           background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+        }
+      }
+      .gmail{
+        border: 1px solid grey;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0);
+        bottom: 300px;
+        backdrop-filter: blur(10px);
+        &:hover{
+          color: white;
+          background-color: #C5221F;
         }
       }
     }
