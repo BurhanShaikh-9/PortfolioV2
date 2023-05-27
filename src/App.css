@@ -23,6 +23,10 @@
   src: url("./assets/Fonts/LobsterTwo-BoldItalic.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Lora";
+  src: url("./assets/Fonts/Lora-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
   font-family: "MartelBlack";
   src: url("./assets/Fonts/Martel-Black.ttf") format("truetype");
 }
@@ -149,7 +153,7 @@ h5 {
 }
 
 .app {
-  font-family: "NeutonRegular";
+  font-family: "Lora";
   height: 100dvh;
   background-color: rgb(236, 236, 236);
   width: 100dvw;
@@ -221,6 +225,26 @@ h5 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+}
+.app .about .aboutInner .rightSection h1 span {
+  color: #808080;
+}
+.app .about .aboutInner .rightSection .leftBracket {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  font-size: 59px;
+  transform: translate(-50%, 0%);
+  color: #808080;
+}
+.app .about .aboutInner .rightSection .rightBracket {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  font-size: 59px;
+  transform: translate(-50%, 0%);
+  color: #808080;
 }
 .app .skill .skillInner {
   display: flex;
@@ -239,6 +263,28 @@ h5 {
   opacity: 0;
   transform: translateX(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.app .skill .skillInner .upperSection .upperInner {
+  position: relative;
+}
+.app .skill .skillInner .upperSection .upperInner h1 span {
+  color: #808080;
+}
+.app .skill .skillInner .upperSection .upperInner .leftBracket {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  font-size: 59px;
+  transform: translate(-50%, 0%);
+  color: #808080;
+}
+.app .skill .skillInner .upperSection .upperInner .rightBracket {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  font-size: 59px;
+  transform: translate(-50%, 0%);
+  color: #808080;
 }
 .app .skill .skillInner .fade-left-in {
   opacity: 1;
@@ -309,39 +355,48 @@ h5 {
   background: rgba(255, 255, 255, 0.5);
   animation: animate 10s linear infinite;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .reactWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .reactWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .reactWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .reactWave:after {
   top: -30px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .nextWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .nextWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .nextWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .nextWave:after {
   top: -15px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .jsWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .jsWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .jsWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .jsWave:after {
   top: -15px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .sassWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .sassWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .sassWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .sassWave:after {
   top: -40px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .bootWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .bootWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .bootWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .bootWave:after {
   top: -40px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .tailWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .tailWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .tailWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .tailWave:after {
   top: -20px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .npmWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .npmWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .npmWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .npmWave:after {
   top: -30px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .gitWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .gitWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .gitWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .gitWave:after {
   top: -20px;
   left: 50%;
 }
-.app .skill .skillInner .bottomSection .bottomInner .skillContainer .photoWave:before, .app .skill .skillInner .bottomSection .bottomInner .skillContainer .photoWave:after {
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .photoWave:before,
+.app .skill .skillInner .bottomSection .bottomInner .skillContainer .photoWave:after {
   top: -10px;
   left: 50%;
 }
@@ -364,6 +419,9 @@ h5 {
 .app .project .projectInner .heading {
   margin-bottom: 20px;
   text-align: center;
+}
+.app .project .projectInner .heading span {
+  color: #808080;
 }
 .app .project .projectInner .works {
   width: 100%;
@@ -440,9 +498,32 @@ h5 {
   align-items: center;
   scroll-snap-align: start;
   width: 100dvw;
-  position: relative;
+  flex-direction: column;
 }
-.app .contact .contactInner .menu {
+.app .contact .contactInner .contactUpper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.app .contact .contactInner .contactUpper h1 {
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  right: 0;
+  transform: translate(0%, 50%);
+}
+.app .contact .contactInner .contactUpper h1 span {
+  color: #808080;
+}
+.app .contact .contactInner .contactBottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+.app .contact .contactInner .contactBottom .menu {
   position: absolute;
   width: 100%;
   display: flex;
@@ -451,7 +532,7 @@ h5 {
   height: 100px;
   transition: all 1s;
 }
-.app .contact .contactInner .linkedIn {
+.app .contact .contactInner .contactBottom .linkedIn {
   bottom: 0;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -459,11 +540,11 @@ h5 {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid grey;
 }
-.app .contact .contactInner .linkedIn:hover {
-  background-color: #0A66C2;
+.app .contact .contactInner .contactBottom .linkedIn:hover {
+  background-color: #0a66c2;
   color: white;
 }
-.app .contact .contactInner .github {
+.app .contact .contactInner .contactBottom .github {
   bottom: 100px;
   border: 1px solid grey;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -471,11 +552,11 @@ h5 {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-.app .contact .contactInner .github:hover {
+.app .contact .contactInner .contactBottom .github:hover {
   color: white;
   background-color: rgb(36, 36, 36);
 }
-.app .contact .contactInner .instagram {
+.app .contact .contactInner .contactBottom .instagram {
   border: 1px solid grey;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0);
@@ -483,11 +564,11 @@ h5 {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-.app .contact .contactInner .instagram:hover {
+.app .contact .contactInner .contactBottom .instagram:hover {
   color: white;
   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 }
-.app .contact .contactInner .gmail {
+.app .contact .contactInner .contactBottom .gmail {
   border: 1px solid grey;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0);
@@ -495,9 +576,9 @@ h5 {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-.app .contact .contactInner .gmail:hover {
+.app .contact .contactInner .contactBottom .gmail:hover {
   color: white;
-  background-color: #C5221F;
+  background-color: #c5221f;
 }
 .app .section {
   height: 100dvh;

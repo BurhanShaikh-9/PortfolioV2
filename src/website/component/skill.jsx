@@ -19,53 +19,56 @@ export const Skill = () => {
         <div className="skillInner">
           <div className={`upperSection ${inRefLeftSkill ? 'fade-left-in' : 'fade-left-out'}`} style={{ transitionDelay: '0.3s' }} ref={refLeftSkill}>
             <div className="upperInner">
-              <h2>What I do?</h2>
+              <h1> <span> &lt;</span>h1<span>&gt;</span> MY SKILLS <span>&lt;</span>/h1<span>&gt;</span> </h1>
               <p>
-              I am proficient in React.js, Next.js, GitHub, and utilizes Tailwind CSS to build visually appealing and responsive websites with a focus on user experience.              </p>
+                I am proficient in React.js, Next.js, GitHub, and utilizes Tailwind CSS to build visually appealing and responsive websites with a focus on user experience.
+              </p>
+              <div className='leftBracket'>&#91;</div>
+              <div className='rightBracket'>&#93;</div>
             </div>
           </div>
-          <div  className={`bottomSection ${inRefRightSkill ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.1s' }} ref={refRightSkill}>
+          <div className={`bottomSection ${inRefRightSkill ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.1s' }} ref={refRightSkill}>
             <div className="bottomInner">
               <div className="skillContainer">
-              <div class="wave reactWave"></div>
+                <div class="wave reactWave"></div>
                 <img src={reactIcon} alt="" />
               </div>
               <div className="skillContainer">
-              <div class="wave nextWave"></div>
+                <div class="wave nextWave"></div>
                 <img src={nextIcon} alt="" />
               </div>
               <div className="skillContainer">
-              <div class="wave jsWave"></div>
+                <div class="wave jsWave"></div>
                 <img src={jsIcon} alt="" />
               </div>
             </div>
             <div className="bottomInner">
 
               <div className="skillContainer">
-              <div class="wave sassWave"></div>
+                <div class="wave sassWave"></div>
                 <img src={sassIcon} alt="" />
               </div>
               <div className="skillContainer">
-              <div class="wave bootWave"></div>
+                <div class="wave bootWave"></div>
                 <img src={bootstrapIcon} alt="" />
               </div>
               <div className="skillContainer">
-              <div class="wave tailWave"></div>
+                <div class="wave tailWave"></div>
                 <img src={tailwindIcon} alt="" />
               </div>
             </div>
             <div className="bottomInner">
 
               <div className="skillContainer">
-              <div class="wave npmWave"></div>
+                <div class="wave npmWave"></div>
                 <img src={npmIcon} alt="" />
               </div>
               <div className="skillContainer">
-              <div class="wave gitWave"></div>
+                <div class="wave gitWave"></div>
                 <img src={githubIcon} alt="" />
               </div>
               <div className="skillContainer">
-              <div class="wave photoWave"></div>
+                <div class="wave photoWave"></div>
                 <img src={photoShopIcon} alt="" />
               </div>
             </div>

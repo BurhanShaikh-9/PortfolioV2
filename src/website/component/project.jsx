@@ -41,9 +41,7 @@ export const Project = () => {
       <div className="container">
         <div className="projectInner">
           <div className="heading">
-            <h1>
-              Projects
-            </h1>
+          <h1> <span> &lt;</span>h1<span>&gt;</span> PROJECTS <span> &lt;</span>/h1<span>&gt;</span> </h1>
           </div>
           <div className="works">
 
