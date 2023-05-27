@@ -11,7 +11,7 @@ export const Contact = () => {
         <React.Fragment >
             <div className="container">
                 <div className="contactInner">
-                    <a href="mailto:shaikhburhanali29@gmail.com" target='_blank' className=' menu gmail'>Open Gmail Inbox</a>
+                    <a href="mailto:shaikhburhanali29@gmail.com" target='_blank' className=' menu gmail'>Gmail</a>
                     <a href="https://www.instagram.com/nyx9_dev/" target='_blank' className=' menu instagram'>
                         Instagram
                     </a>

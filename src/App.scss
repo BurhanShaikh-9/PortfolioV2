@@ -291,10 +291,91 @@ h5 {
             justify-content: center;
             align-items: center;
             padding: 10px;
+            overflow:hidden;
+            position: relative;
             img {
               width: 50px;
+              position: relative;
+              z-index: 1;
+            }
+          
+            .wave{
+              position:absolute;
+              width:100%;
+              height:100%;
+              background:#ffffff;
+              box-shadow:inset 0 0 50px rgba(0,0,0,.5);
+              &:before, &:after{
+                content:'';
+                position:absolute;
+                width:200%;
+                height:200%;
+                top:0;
+                left:50%;
+                transform:translate(-50%,-75%);
+                background:#000;
+              }
+              &:before{
+                border-radius:45%;
+                background:rgba(255,255,255,1);
+                animation:animate 5s linear infinite;
+              }
+              &:after{
+                border-radius:40%;
+                background:rgba(255,255,255,.5);
+                animation:animate 10s linear infinite;
+              }
+            }
+            .reactWave:before , .reactWave:after{
+              top:-30px;
+              left:50%;
+            }
+            .nextWave:before , .nextWave:after{
+              top:-15px;
+              left:50%;
+            }
+            .jsWave:before , .jsWave:after{
+              top:-15px;
+              left:50%;
+            }
+            .sassWave:before , .sassWave:after{
+              top:-40px;
+              left:50%;
+            }
+            .bootWave:before , .bootWave:after{
+              top:-40px;
+              left:50%;
+            }
+            .tailWave:before , .tailWave:after{
+              top:-20px;
+              left:50%;
+            }
+            .npmWave:before , .npmWave:after{
+              top:-30px;
+              left:50%;
+            }
+            .gitWave:before , .gitWave:after{
+              top:-20px;
+              left:50%;
+            }
+            .photoWave:before , .photoWave:after{
+              top:-10px;
+              left:50%;
+            }
+           
+            @keyframes animate{
+              0%{
+                 transform:translate(-50%,-75%) rotate(0deg);
+              }
+              100%{
+                 transform:translate(-50%,-75%) rotate(360deg);
+              }
             }
           }
+
+
+          
+          
         }
       }
     }
