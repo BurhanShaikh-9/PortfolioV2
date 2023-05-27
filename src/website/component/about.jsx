@@ -21,8 +21,8 @@ export const About = () => {
               <p>
               I am a Software Engineer, who keeps looking for the opportunity to get better, to learn and to improve my skills.
               </p>
-              <div className='leftBracket'>&#91;</div>
-              <div className='rightBracket'>&#93;</div>
+              {/* <div className='leftBracket'>&#91;</div>
+              <div className='rightBracket'>&#93;</div> */}
             </div>
           </div>
         </div>

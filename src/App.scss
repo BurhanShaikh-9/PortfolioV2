@@ -537,16 +537,16 @@ h5 {
       scroll-snap-align: start;
       width: 100dvw;
       flex-direction: column;
-      .contactUpper{
+      .contactUpper {
         position: relative;
         width: 100%;
         text-align: center;
-        h1{
+        h1 {
           position: absolute;
           width: 100%;
           top: 220px;
           right: 0;
-          
+
           transform: translate(0%, 50%);
           span {
             color: #808080;
@@ -777,20 +777,7 @@ h5 {
       }
     }
   }
-  .contactInner {
-    .menu {
-      height: 100px !important;
-    }
-    .linkedIn {
-      bottom: 0 !important;
-    }
-    .github {
-      bottom: 100px !important;
-    }
-    .instagram {
-      bottom: 200px !important;
-    }
-  }
+  
 }
 
 @media only screen and (max-width: 576px) {
@@ -832,7 +819,62 @@ h5 {
 
       .rightSection {
         min-width: 290px !important;
+        h1 {
+          font-size: 25px;
+        }
+        .leftBracket {
+          top: 10px !important;
+          left: 0px !important;
+          font-size: 85px !important;
+        }
+        .rightBracket {
+          top: 10px !important;
+          right: -30px !important;
+          font-size: 85px !important;
+        }
       }
+    }
+  }
+  .skill {
+    .skillInner {
+      .upperSection {
+        .upperInner {
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  .project {
+    .projectInner {
+      .heading {
+        h1 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .contactInner {
+    .contactUpper{
+      h1{
+        font-size: 25px;
+      }
+    }
+    .menu {
+      height: 60px !important;
+    }
+    .linkedIn {
+      bottom: 0 !important;
+    }
+    .github {
+      bottom: 60px !important;
+    }
+    .instagram {
+      bottom: 120px !important;
+    }
+    .gmail{
+      bottom: 182px !important;
     }
   }
 }

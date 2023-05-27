@@ -706,18 +706,6 @@ h5 {
   .about .aboutInner .leftSection img {
     width: 95% !important;
   }
-  .contactInner .menu {
-    height: 100px !important;
-  }
-  .contactInner .linkedIn {
-    bottom: 0 !important;
-  }
-  .contactInner .github {
-    bottom: 100px !important;
-  }
-  .contactInner .instagram {
-    bottom: 200px !important;
-  }
 }
 @media only screen and (max-width: 576px) {
   .container {
@@ -751,5 +739,42 @@ h5 {
   }
   .about .aboutInner .rightSection {
     min-width: 290px !important;
+  }
+  .about .aboutInner .rightSection h1 {
+    font-size: 25px;
+  }
+  .about .aboutInner .rightSection .leftBracket {
+    top: 10px !important;
+    left: 0px !important;
+    font-size: 85px !important;
+  }
+  .about .aboutInner .rightSection .rightBracket {
+    top: 10px !important;
+    right: -30px !important;
+    font-size: 85px !important;
+  }
+  .skill .skillInner .upperSection .upperInner h1 {
+    font-size: 25px;
+  }
+  .project .projectInner .heading h1 {
+    font-size: 25px;
+  }
+  .contactInner .contactUpper h1 {
+    font-size: 25px;
+  }
+  .contactInner .menu {
+    height: 60px !important;
+  }
+  .contactInner .linkedIn {
+    bottom: 0 !important;
+  }
+  .contactInner .github {
+    bottom: 60px !important;
+  }
+  .contactInner .instagram {
+    bottom: 120px !important;
+  }
+  .contactInner .gmail {
+    bottom: 182px !important;
   }
 }/*# sourceMappingURL=App.css.map */

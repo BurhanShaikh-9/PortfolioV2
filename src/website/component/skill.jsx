@@ -23,8 +23,8 @@ export const Skill = () => {
               <p>
                 I am proficient in React.js, Next.js, GitHub, and utilizes Tailwind CSS to build visually appealing and responsive websites with a focus on user experience.
               </p>
-              <div className='leftBracket'>&#91;</div>
-              <div className='rightBracket'>&#93;</div>
+              {/* <div className='leftBracket'>&#91;</div>
+              <div className='rightBracket'>&#93;</div> */}
             </div>
           </div>
           <div className={`bottomSection ${inRefRightSkill ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.1s' }} ref={refRightSkill}>
