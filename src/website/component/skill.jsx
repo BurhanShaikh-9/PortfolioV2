@@ -30,45 +30,45 @@ export const Skill = () => {
           <div className={`bottomSection ${inRefRightSkill ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.1s' }} ref={refRightSkill}>
             <div className="bottomInner">
               <div className="skillContainer">
-                <div class="wave reactWave"></div>
+                <div className="wave reactWave"></div>
                 <img src={reactIcon} alt="" />
               </div>
               <div className="skillContainer">
-                <div class="wave nextWave"></div>
+                <div className="wave nextWave"></div>
                 <img src={nextIcon} alt="" />
               </div>
               <div className="skillContainer">
-                <div class="wave jsWave"></div>
+                <div className="wave jsWave"></div>
                 <img src={jsIcon} alt="" />
               </div>
             </div>
             <div className="bottomInner">
 
               <div className="skillContainer">
-                <div class="wave sassWave"></div>
+                <div className="wave sassWave"></div>
                 <img src={sassIcon} alt="" />
               </div>
               <div className="skillContainer">
-                <div class="wave bootWave"></div>
+                <div className="wave bootWave"></div>
                 <img src={bootstrapIcon} alt="" />
               </div>
               <div className="skillContainer">
-                <div class="wave tailWave"></div>
+                <div className="wave tailWave"></div>
                 <img src={tailwindIcon} alt="" />
               </div>
             </div>
             <div className="bottomInner">
 
               <div className="skillContainer">
-                <div class="wave npmWave"></div>
+                <div className="wave npmWave"></div>
                 <img src={npmIcon} alt="" />
               </div>
               <div className="skillContainer">
-                <div class="wave gitWave"></div>
+                <div className="wave gitWave"></div>
                 <img src={githubIcon} alt="" />
               </div>
               <div className="skillContainer">
-                <div class="wave photoWave"></div>
+                <div className="wave photoWave"></div>
                 <img src={photoShopIcon} alt="" />
               </div>
             </div>

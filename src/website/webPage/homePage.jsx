@@ -11,17 +11,11 @@ import { Contact } from '../component/contact';
 
 export const HomePage = () => {
  
-useEffect(()=>{
-  document.onmousemove = e => {
-    requestAnimationFrame(() => {
-      document.querySelector('pointer').style.cssText = `top: ${e.clientY}px; left: ${e.clientX}px`;
-    });
-  };
-})
+
 
   return (
     <React.Fragment>
-      <pointer></pointer>
+      
       <main className="app">
         <div id="WelcomeMain" className='section welcome '><Welcome /></div>
         <div id="AboutMain" className='section about '> <About /> </div>
