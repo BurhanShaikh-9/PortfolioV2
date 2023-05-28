@@ -570,6 +570,13 @@ h5 {
           height: 100px;
           transition: all 1s;
         }
+        h1{
+          bottom: 450px;
+          position: absolute;
+          span {
+            color: #808080;
+          }
+        }
         .linkedIn {
           bottom: 0;
           backdrop-filter: blur(10px);
@@ -779,11 +786,12 @@ h5 {
     }
   }
   .contactInner {
-    .contactUpper{
-      h1{
-        font-size: 25px;
-      }
+   
+    h1{
+      bottom: 300px !important;
+      font-size: 25px !important;
     }
+ 
     .menu {
       height: 60px !important;
     }

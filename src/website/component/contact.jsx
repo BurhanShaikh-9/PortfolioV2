@@ -12,9 +12,10 @@ export const Contact = () => {
             <div className="container">
                 <div className="contactInner">
                     <div className="contactUpper">
-                        <h1> <span> &lt;</span>h1<span>&gt;</span> CONTACT <span> &lt;</span>/h1<span>&gt;</span> </h1>
+                      
                     </div>
                     <div className="contactBottom">
+                        <h1> <span> &lt;</span>h1<span>&gt;</span> CONTACT <span> &lt;</span>/h1<span>&gt;</span> </h1>
                         <a href="mailto:shaikhburhanali29@gmail.com" target='_blank' className=' menu gmail'>Gmail</a>
                         <a href="https://www.instagram.com/nyx9_dev/" target='_blank' className=' menu instagram'>
                             Instagram
