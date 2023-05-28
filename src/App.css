@@ -737,6 +737,42 @@ h5 {
   .skill .skillInner .bottomSection .bottomInner .skillContainer .wave {
     border-radius: 10px !important;
   }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .reactWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .reactWave:after {
+    top: -20px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .nextWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .nextWave:after {
+    top: -5px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .jsWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .jsWave:after {
+    top: -5px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .sassWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .sassWave:after {
+    top: -30px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .bootWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .bootWave:after {
+    top: -30px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .tailWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .tailWave:after {
+    top: -10px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .npmWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .npmWave:after {
+    top: -20px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .gitWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .gitWave:after {
+    top: -10px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .photoWave:before,
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .photoWave:after {
+    top: 0px !important;
+  }
 }
 @media only screen and (max-width: 576px) {
   .container {

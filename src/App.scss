@@ -816,6 +816,51 @@ h5 {
             .wave {
               border-radius: 10px !important;
             }
+            .reactWave:before,
+            .reactWave:after {
+              top: -20px !important;
+   
+            }
+            .nextWave:before,
+            .nextWave:after {
+              top: -5px !important;
+  
+            }
+            .jsWave:before,
+            .jsWave:after {
+              top: -5px !important;
+
+            }
+            .sassWave:before,
+            .sassWave:after {
+              top: -30px !important;
+  
+            }
+            .bootWave:before,
+            .bootWave:after {
+              top: -30px !important;
+     
+            }
+            .tailWave:before,
+            .tailWave:after {
+              top: -10px !important;
+         
+            }
+            .npmWave:before,
+            .npmWave:after {
+              top: -20px !important;
+       
+            }
+            .gitWave:before,
+            .gitWave:after {
+              top: -10px !important;
+          
+            }
+            .photoWave:before,
+            .photoWave:after {
+              top: 0px !important;
+     
+            }
           }
         }
       }
