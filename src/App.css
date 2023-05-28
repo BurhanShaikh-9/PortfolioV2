@@ -332,6 +332,7 @@ h5 {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   background: #ffffff;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -723,6 +724,18 @@ h5 {
   }
   .contactInner .gmail {
     bottom: 182px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 5px !important;
+    border-radius: 10px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer img {
+    width: 40px !important;
+  }
+  .skill .skillInner .bottomSection .bottomInner .skillContainer .wave {
+    border-radius: 10px !important;
   }
 }
 @media only screen and (max-width: 576px) {

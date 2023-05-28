@@ -800,7 +800,27 @@ h5 {
       bottom: 182px !important;
     }
   }
-  
+  .skill{
+    .skillInner{
+      .bottomSection{
+        .bottomInner{
+          .skillContainer{
+            width: 50px !important;
+            height: 50px !important;
+            padding: 5px !important;
+            border-radius: 10px !important;
+            img {
+              width: 40px !important;
+           
+            }
+            .wave {
+              border-radius: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 576px) {
