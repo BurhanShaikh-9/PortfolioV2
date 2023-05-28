@@ -121,7 +121,7 @@ h5 {
     top: 0;
     width: 83%;
     display: flex;
-    z-index: 999999999999;
+    z-index: 2;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
@@ -134,9 +134,29 @@ h5 {
     .menuOuter {
       display: none;
     }
+    
   }
   .nav2 {
-    display: none;
+    // display: none;
+    opacity: 0;
+    transition: opacity 0.5s, height 0s ease 0.5s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.966);
+    width: 100vw;
+    height: 0;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+  }
+  .showNav{
+    opacity: 1;
+    height: 100vh;
+    transition: opacity 0.5s, height 0s;
   }
 }
 
@@ -734,18 +754,8 @@ h5 {
       }
     }
     .nav2 {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 10px;
-      background-color: rgba(0, 0, 0, 0.966);
-      width: 100dvw;
-      height: 100dvh;
-      position: absolute;
-      z-index: 10;
-      top: 100%;
+      // opacity: 1;
+     
       p {
         font-size: 30px;
         a {
@@ -764,8 +774,8 @@ h5 {
         position: relative;
         button {
           position: absolute;
-          top: 70px;
-          right: 60px;
+          top: 19px;
+          right: 35px;      
           color: white;
           cursor: pointer;
           font-size: 30px;

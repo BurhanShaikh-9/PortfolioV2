@@ -17,9 +17,9 @@ export const Welcome = () => {
       <div className="container">
         <div className="welcomeInner">
         <div className="inner">
-            <img className={`no ${inViewNoon ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '1.5s' }} id="baId" src={noon} alt="" ref={refNoon} />
-            <img className={`ha ${inViewHa ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '1s' }} id="haId" src={ha} alt="" ref={refHa} />
-            <img  className={`ba ${inViewBa ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.5s' }}  id="naId" src={Ba} alt="" ref={refBa} />
+            <img className={`no ${inViewNoon ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '1.5s' }} id="baId" src={noon} draggable="false" alt="" ref={refNoon} />
+            <img className={`ha ${inViewHa ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '1s' }} id="haId" src={ha} draggable="false" alt="" ref={refHa} />
+            <img  className={`ba ${inViewBa ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.5s' }}  id="naId" src={Ba} draggable="false" alt="" ref={refBa} />
           </div>
         </div>
       </div>
