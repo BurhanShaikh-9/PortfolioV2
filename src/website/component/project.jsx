@@ -60,7 +60,8 @@ export const Project = () => {
                   </a>
                 </div>
                 <div className='item'>
-                  <a className="worksInner" draggable="false" target="_blank" href='https://boba-bubble.com/'>
+                  <a className="worksInner" draggable="false" target="_blank" href='https://arraydigitals.com/bobaBubble/index.php'>
+                  {/* <a className="worksInner" draggable="false" target="_blank" href='https://boba-bubble.com/'> */}
                     <img src={bobaLogo} alt="" />
                     <div className="blackwindow">
                       <h2>Boba Bubble</h2>
