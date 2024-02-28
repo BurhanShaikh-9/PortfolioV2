@@ -28,7 +28,7 @@ export const Welcome = () => {
               <div className="themeBtnInner">
                 <button className="themeBtn defaultTheme" onClick={()=>onThemeClick('defaultTheme')}/>
                 <button className="themeBtn blackTheme"  onClick={()=>onThemeClick('blackTheme')}/>
-                {/* <button className="themeBtn blueTheme"  onClick={()=>onThemeClick('blueTheme')}/> */}
+                <button className="themeBtn blueTheme"  onClick={()=>onThemeClick('blueTheme')}/>
               </div>
           </div>
         <div className="inner">

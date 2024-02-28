@@ -170,11 +170,24 @@ h5 {
   transition: opacity 0.5s ease-in-out;
 }
 
+.blueTheme {
+  filter: invert(1);
+}
+.blueTheme .switchThemeBtns {
+  filter: invert(0);
+}
+.blueTheme .welcomeInner .inner {
+  filter: invert(1);
+}
+.blueTheme .welcomeInner .inner img {
+  filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(-270deg);
+}
+
 .blackTheme {
   filter: invert(1);
 }
 .blackTheme .switchThemeBtns {
-  filter: invert(1);
+  filter: invert(0);
 }
 .blackTheme .aboutInner .leftSection {
   filter: invert(1);
@@ -197,6 +210,10 @@ h5 {
   filter: invert(1);
 }
 
+.defaultTheme .switchThemeBtns {
+  filter: invert(1);
+}
+
 .app {
   font-family: "Lora";
   height: 100dvh;
@@ -206,11 +223,8 @@ h5 {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.app .welcome {
-  position: relative;
-}
 .app .welcome .switchThemeBtns {
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   left: 30px;
 }
@@ -259,7 +273,7 @@ h5 {
   background-color: white;
 }
 .app .welcome .switchThemeBtns .themeBtnInner .blueTheme {
-  background-color: #06E9E4;
+  background-color: #19D8BD;
 }
 .app .welcome .switchThemeBtns .themeBtnInner .blueTheme::after {
   background-color: black;

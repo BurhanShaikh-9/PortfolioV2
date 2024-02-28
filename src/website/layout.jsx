@@ -7,7 +7,7 @@ import { useThemeStore } from '../../utils/zustandStore/store';
         const aboutRef = useRef(null);
         const contactRef = useRef(null);
   const { themeName } = useThemeStore();
-console.log(themeName, 'themeNamee')
+
         return (
             <React.Fragment>
                 <div className={themeName}>
