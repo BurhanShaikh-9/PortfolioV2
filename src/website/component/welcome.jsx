@@ -18,8 +18,15 @@ export const Welcome = () => {
  
   const onThemeClick = (value) =>{
     setThemeName(value)
+    localStorage.setItem('theme', value);
   }
 
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+      setThemeName(storedTheme);
+    }
+  }, []); 
   return (
     <React.Fragment >
       <div className="container">

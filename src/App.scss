@@ -201,34 +201,82 @@ h5 {
 }
 
 
-.blueTheme{
+.blueTheme {
   filter: invert(1);
+
   .switchThemeBtns {
     filter: invert(0);
+    position: fixed;
   }
 
-  .welcomeInner{
-    .inner{
-      filter: invert(1);
-      img{
+  .welcomeInner {
+    .inner {
+      filter: invert(1) drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.311));
 
-        filter:invert(100%) sepia(100%) saturate(10000%) hue-rotate(-270deg);
+      img {
+
+        filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(-270deg);
+      }
+    }
+  }
+
+  .aboutInner {
+    .leftSection {
+      img {
+        filter: invert(1);
+        border: 1px solid rgb(0, 255, 242) !important;
+      }
+    }
+  }
+
+  .skillInner {
+    .bottomInner {
+      filter: invert(1);
+
+      .skillContainer {
+        box-shadow: rgba(0, 255, 242, 0.308) 0px 5px 9px 0px !important
+      }
+    }
+  }
+
+  .projectInner {
+    .works {
+      .worksInner {
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px !important;
+
+        filter: invert(1);
+
+      }
+    }
+  }
+
+  .contactInner {
+    .contactBottom {
+      a:hover {
+        filter: invert(1);
       }
     }
   }
 
 }
-.blackTheme  {
+
+.blackTheme {
   filter: invert(1);
 
   .switchThemeBtns {
     filter: invert(0);
   }
 
+  .welcomeInner {
+    .inner {
+      filter:  drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.311));
+    }
+  }
+
   .aboutInner {
     .leftSection {
       filter: invert(1);
-
+      
       img {
         box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
         border: 1px solid white !important;
@@ -265,7 +313,8 @@ h5 {
     }
   }
 }
-.defaultTheme{
+
+.defaultTheme {
 
   .switchThemeBtns {
     filter: invert(1);
@@ -283,73 +332,75 @@ h5 {
 
   .welcome {
     // position: relative;
-    
-          .switchThemeBtns {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            // transform: translate(-50%, -50%);
-    
-            .themeBtnInner {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              gap: 10px;
-    
-              .themeBtn {
-                border-radius: 50%;
-                border: none;
-                width: 30px;
-                height: 30px;
-                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-                cursor: pointer;
-                position: relative;
-    
-                &::after {
-                  content: '';
-                  top: 0;
-                  right: 0;
-                  clip-path: polygon(49.8% 0%, 100.1% 0%, 100% 100%, 50% 100.3%);
-                  position: absolute;
-                  width: 30px;
-                  height: 30px;
-                  border-radius: 0 50% 50% 0;
-                }
-              }
-    
-              .defaultTheme {
-                background-color: #E3E3ED;
-    
-                &::after {
-                  background-color: #1C1C1D;
-                }
-              }
-    
-              .blackTheme {
-                background-color: white;
-    
-                &::after {
-                  background-color: black;
-                }
-              }
-    
-              .redTheme {
-                background-color: red;
-    
-                &::after {
-                  background-color: white;
-                }
-              }
-    
-              .blueTheme {
-                background-color: #19D8BD;
-    
-                &::after {
-                  background-color: black;
-                }
-              }
-            }
+
+    .switchThemeBtns {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      z-index: 1;
+      // transform: translate(-50%, -50%);
+
+      .themeBtnInner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .themeBtn {
+          border-radius: 50%;
+          border: none;
+          width: 30px;
+          height: 30px;
+          // box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          cursor: pointer;
+          position: relative;
+
+          &::after {
+            content: '';
+            top: 0;
+            right: 0;
+            clip-path: polygon(49.8% 0%, 100.1% 0%, 100% 100%, 50% 100.3%);
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 0 50% 50% 0;
           }
+        }
+
+        .defaultTheme {
+          background-color: #E3E3ED;
+
+          &::after {
+            background-color: #1C1C1D;
+          }
+        }
+
+        .blackTheme {
+          background-color: white;
+
+          &::after {
+            background-color: black;
+          }
+        }
+
+        .redTheme {
+          background-color: red;
+
+          &::after {
+            background-color: white;
+          }
+        }
+
+        .blueTheme {
+          background-color: #19D8BD;
+
+          &::after {
+            background-color: black;
+          }
+        }
+      }
+    }
+
     .welcomeInner {
       margin-top: 60px;
 

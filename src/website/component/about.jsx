@@ -12,17 +12,15 @@ export const About = () => {
     <React.Fragment >
       <div className="container">
         <div className="aboutInner">
-        <div className={`leftSection ${inRefLeftPic ? 'fade-left-in' : 'fade-left-out'}`} style={{ transitionDelay: '0.3s' }} ref={refLeft}>
+          <div className={`leftSection ${inRefLeftPic ? 'fade-left-in' : 'fade-left-out'}`} style={{ transitionDelay: '0.3s' }} ref={refLeft}>
             <img src={img1} alt="" />
           </div>
           <div className="rightSection">
             <div className={`rightInner ${inRefRightPic ? 'fade-in' : 'fade-out'}`} style={{ transitionDelay: '0.1s' }} ref={refRight}>
               <h1> <span> &lt;</span>h1<span>&gt;</span> ABOUT <span>&lt;</span>/h1<span>&gt;</span> </h1>
               <p>
-              I am a Software Engineer, who keeps looking for the opportunity to get better, to learn and to improve my skills.
+                I am a Software Engineer, who keeps looking for the opportunity to get better, to learn and to improve my skills.
               </p>
-              {/* <div className='leftBracket'>&#91;</div>
-              <div className='rightBracket'>&#93;</div> */}
             </div>
           </div>
         </div>
