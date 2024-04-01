@@ -437,6 +437,17 @@ h5 {
   }
 
   .about {
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      opacity: .1;
+      width: 100%;
+      height: 100%;
+      background-image: url('../src/assets/aboutBackground.jpg');
+      background-size: contain;
+      background-repeat: repeat;
+    }
     .aboutInner {
       display: flex;
       justify-content: center;
